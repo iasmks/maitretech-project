@@ -11,8 +11,6 @@ function Registration() {
 
   const [flag, setFlag] = useState(false);
   const [login, setLogin] = useState(true);
-  
-
 
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -35,13 +33,8 @@ function Registration() {
   function handleClick() {
     setLogin(!login);
   }
-
- 
-  
-
   return (
     <>
- 
         <div className={styles.outer}>
           {" "}
           {login ? (
@@ -58,7 +51,6 @@ function Registration() {
                   onChange={(event) => setName(event.target.value)}
                   required />
               </div>
-
               <div className="form-group">
                 <label>Email</label>
                 <input
@@ -68,7 +60,6 @@ function Registration() {
                   onChange={(event) => setEmail(event.target.value)}
                   required />
               </div>
-
               <div className="form-group">
                 <label>Password</label>
                 <input
@@ -78,7 +69,6 @@ function Registration() {
                   onChange={(event) => setPassword(event.target.value)}
                   required />
               </div>
-
               <div className="form-group">
                 <label>Phone No.</label>
                 <input
@@ -93,7 +83,6 @@ function Registration() {
               </button>
               <p onClick={handleClick} className="forgot-password text-right">
                 Already SignUp{" "}log in?
-                
               </p>
               {flag && (
                 <Alert color="primary" variant="danger">
@@ -105,9 +94,7 @@ function Registration() {
             <Login />
           )}
         </div>
-    
     </>
   );
 }
-
 export default Registration;

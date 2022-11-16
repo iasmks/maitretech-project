@@ -33,12 +33,13 @@
 
 .cardBtn{
     margin-top: 1.8rem;
+    margin-bottom: 3px;
 }
 
 .cardBtn button{
-    width: 50px;
-    height: 28px;
-    margin: 0.1rem;
+    width: 90px;
+    height: 48px;
+    margin: 0.3rem;
     border: none;
     border-radius: 2px;
     background-color: blue;
